@@ -49,10 +49,10 @@ public class ResponseMessage<T> implements Serializable {
 		super();
 	}
 	
-	public ResponseMessage(final String requestId) {
+	public ResponseMessage(final String requestId, Date requestTime) {
 		super();
 		this.setRequestId(requestId);
-		this.setRequestTime(new Timestamp(System.currentTimeMillis()));
+		this.setRequestTime(requestTime);
 	}
 
 	public String getRequestId() {
